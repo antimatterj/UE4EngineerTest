@@ -19,7 +19,7 @@ When completed, send us an email and a link to your fork of the repository.
 
 ### Have the robot take pictures and output information
 
-- After every time the pawn moves forward or rotates, take a screenshot and save it to the saved folder.
+- After every time the pawn moves forward or rotates, take a screenshot and save it to the saved folder, incrementing the name for each image taken. ie: image_1.png, image_2.png, image_3.png, etc..
 - In addition to the screenshot, output a text file with a list of the actor names that are in the viewport when the image is taken
   - Each image should have a corresponding text file. ie: image_1.png and image_1_actors.txt
 
