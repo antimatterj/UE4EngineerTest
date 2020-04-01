@@ -21,6 +21,7 @@ When completed, send us an email and a link to your fork of the repository.
 
 - After every time the pawn moves forward or rotates, take a screenshot and save it to the saved folder.
 - In addition to the screenshot, output a text file with a list of the actor names that are in the viewport when the image is taken
+  - Each image should have a corresponding text file. ie: image_1.png and image_1_actors.txt
 
 The collision check against objects and rotation of the pawn should happen on the C++ side. The easiest way to set this up would likely be a C++ Blueprint with the C++ functionality handling line traces for obstruction checks and choice of new direction called from the blueprint's node graph during tick. Please use UE4 conventions and frameworks for C++ implementation.
 Online research, UE4 documentation, Stackoverflow, etc., are all fair game. Google to your heart's content :)
