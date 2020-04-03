@@ -22,14 +22,32 @@ When completed, send us an email and a link to your fork of the repository.
 - After every time the pawn moves forward or rotates, take a screenshot and save it to the saved folder, incrementing the name for each image taken. ie: image_1.png, image_2.png, image_3.png, etc..
 - In addition to the screenshot, output a text file with a list of the actor names that are in the viewport when the image is taken
   - Each image should have a corresponding text file. ie: image_1.png and image_1_actors.txt
-
+  - An example folder structure would be the following:
+    - Project/Saved/
+      - Data/
+        - image_1.png
+        - image_1_actors.txt
+        - image_2.png
+        - image_2_actors.txt
+        
+        
 The collision check against objects and rotation of the pawn should happen on the C++ side. The easiest way to set this up would likely be a C++ Blueprint with the C++ functionality handling line traces for obstruction checks and choice of new direction called from the blueprint's node graph during tick. Please use UE4 conventions and frameworks for C++ implementation.
 Online research, UE4 documentation, Stackoverflow, etc., are all fair game. Google to your heart's content :)
 
-When hitting Play In Editor, the pawn should start navigating and dropping spheres into the environment.
+When hitting Play In Editor, the viewport should be from the pov of the robot, and it should begin navigating the environment and doing the following:
+- Move or turn
+- Take an image 
+- Write a text file of all actors visible in the viewport
+- Wait one second (This can happen asynchronously during the image taking and text file writing)
+- Move/turn again and repeat loop
+
+***Some things to note***
+- Performance is not a concern for this. Feel free to get all actors in the viewport as naively as you would like, and if you have ideas on how to make it more performant you can just let us know your thoughts when you submit your final project.
+- We are also not perfect, because of that you may be unclear on how to proceed due to something unclear in the instructions. If that happens, just let us know and we would be happy to clarify what we are expecting.
+
 We have created a map in the project called `AIReverieMap.umap` in the `AIReverie` folder. Feel free to use that map or create your own.
 If you create your own, ensure it has a variety of objects in it.
 
 A game mode has also been created and set as the default in the project, which can be found at `AIReverie/BP_AIReverie_GameMode`
 
-If you have any questions at all please email whoever sent this to you. We are more than happy to answer any questions.
+Please email us with any questions, we understand that this is a different use case than you may be used to and the instructions might not be clear. We are happy to clarify anything.
