@@ -1,5 +1,5 @@
 # UE4EngineerTest
-This project currently runs on UE4 4.24.3
+This project currently runs on UE4 4.25.4
 
 ----------------------------------------------
 ## Instructions
