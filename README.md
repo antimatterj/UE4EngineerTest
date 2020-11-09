@@ -32,7 +32,7 @@ When completed, send us an email and a link to your fork of the repository.
         
         
 The collision check against objects and rotation of the pawn should happen on the C++ side. The easiest way to set this up would likely be a C++ Blueprint with the C++ functionality handling line traces for obstruction checks and choice of new direction called from the blueprint's node graph during tick. Please use UE4 conventions and frameworks for C++ implementation.
-Online research, UE4 documentation, Stackoverflow, etc., are all fair game. Google to your heart's content :)
+**Online research, UE4 documentation, Stackoverflow, etc., are all fair game. Google to your heart's content :)**
 
 When hitting Play In Editor, the viewport should be from the pov of the robot, and it should begin navigating the environment and doing the following:
 - Move or turn
