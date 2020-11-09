@@ -41,6 +41,11 @@ When hitting Play In Editor, the viewport should be from the pov of the robot, a
 - Wait one second (This can happen asynchronously during the image taking and text file writing)
 - Move/turn again and repeat loop
 
+### Create a second robot ###
+
+- This robot should be implemented solely in blueprints, inheriting from the previous robot.
+- This robot should behave the same way as robot 1, but it should also drop a sphere actor into the level where it is.
+
 ***Some things to note***
 - Performance is not a concern for this. Feel free to get all actors in the viewport as naively as you would like, and if you have ideas on how to make it more performant you can just let us know your thoughts when you submit your final project.
 - We are also not perfect, because of that you may be unclear on how to proceed due to something unclear in the instructions. If that happens, just let us know and we would be happy to clarify what we are expecting.
